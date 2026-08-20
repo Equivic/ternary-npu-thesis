@@ -1,0 +1,41 @@
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# --- Verilog / simulation ---
+*.vcd
+*.fst
+*.fsdb
+*.vvp
+sim_build/
+results.xml
+*.log
+
+# --- CocoTB ---
+sim_build/
+.pytest_cache/
+
+# --- OpenLane / synthesis artifacts ---
+# Keep final reports (synth/reports/), ignore intermediate run directories
+synth/openlane_config/**/runs/
+synth/openlane_config/**/tmp/
+*.gds
+*.lef.gz
+
+# --- FPGA build artifacts ---
+fpga/build/
+*.bit
+*.bin
+
+# --- OS / editor junk ---
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# --- Large binaries you don't want in git history ---
+*.bitstream
