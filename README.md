@@ -8,8 +8,6 @@ with a dedicated compute lane, instead of a shared centralized compute
 block. Implemented entirely in standard digital cells, integrated as a
 memory-mapped peripheral into an open-source RISC-V SoC.
 
-Full architecture and motivation: see [`docs/thesis_proposal.pdf`](docs/thesis_proposal.pdf).
-
 ## Status
 
 🚧 Early development — started August 2026.
@@ -40,7 +38,3 @@ scripts/       Automation / toolchain helpers
 - [OpenLane](https://github.com/The-OpenROAD-Project/OpenLane) + Sky130 PDK for synthesis
 - KLayout for layout inspection
 - FPGA target: TBD
-
-## Supervisor
-
-doc. dr. Marijan Jurgo — Vilnius TECH
