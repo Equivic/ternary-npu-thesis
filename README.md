@@ -38,3 +38,17 @@ scripts/       Automation / toolchain helpers
 - [OpenLane](https://github.com/The-OpenROAD-Project/OpenLane) + Sky130 PDK for synthesis
 - KLayout for layout inspection
 - FPGA target: TBD
+
+## Enviroment Setup
+
+This project uses Python 3.13 specifically (cocotb 2.0.1 does not yet support 3.14+).
+
+```bash
+python3.13 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+System-level tools required:
+- Verilator, Yosys, GTKWave, GHDL, Magic
+- Any PDK
