@@ -1,0 +1,5 @@
+v 4
+file . "ternary_pe.vhd" "2f33bf651c82a1793a58e5f6b266b155542251b7" "20260828165652.957":
+  entity ternary_pe at 1( 0) + 0 on 11;
+  architecture dataflow of ternary_pe at 12( 250) + 0 on 12;
+  architecture behavioral of ternary_pe at 18( 418) + 0 on 13;

@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1787939046" />
+    <testcase name="test_something" classname="test_ternary_pe_cocotb" file="/home/lukys/thesis/tb/cocotb/ternary_pe/test_ternary_pe_cocotb.py" lineno="25" time="0.0002491474151611328" sim_time_ns="6.0" ratio_time="24082.12822966507" />
+  </testsuite>
+</testsuites>
