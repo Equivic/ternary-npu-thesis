@@ -21,4 +21,17 @@ begin
         contribution  =>  contributions(2*i+1 downto 2*i)
       );
   end generate;
+  sum_proc : process(contributions)
+    variable total : signed(8 downto 0);
+  begin
+    total := (others => '0');
+    for i in 0 to 127 loop
+      total := total + resize(signed(contributions(2*i+1 downto 2*i)), 9);
+    end loop;
+    if total > 0 then
+      output <= '1';
+    else
+      output <= '0';
+    end if;
+  end process;
 end structural;
